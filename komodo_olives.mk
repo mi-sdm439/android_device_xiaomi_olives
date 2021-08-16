@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
@@ -26,16 +26,14 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 IS_PHONE := true
 
-# LegionOS
-LEGION_BUILD_TYPE := UNOFFICIAL
-LEGION_MAINTAINER := skittels15
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.maintainer.name=skittels15
+# komodoOS
+KOMODO_OFFFICIAL := false
+KOMODO_GAPPS_TYPE := nogapps
+KOMODO_VARIANT := RELEASE
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := olives
-PRODUCT_NAME := legion_olives
+PRODUCT_NAME := komodo_olives
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8 Series
