@@ -1,0 +1,22 @@
+[
+  {
+    "remote": "devices",
+    "repository": "device_xiaomi_sdm439-common",
+    "target_path": "device/xiaomi/sdm439-common"
+  },
+  {
+    "remote": "devices",
+    "repository": "kernel_xiaomi_sdm439",
+    "target_path": "kernel/xiaomi/sdm439"
+  },
+  {
+    "remote": "devices",
+    "repository": "vendor_xiaomi_sdm439-common",
+    "target_path": "vendor/xiaomi/sdm439-common"
+  },
+  {
+    "remote": "devices",
+    "repository": "vendor_xiaomi_olives",
+    "target_path": "vendor/xiaomi/olives"
+  }
+]
